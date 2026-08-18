@@ -6,5 +6,26 @@ export const awardsData = [
 ];
 
 export const marqueeItems = [
-  "REACT", "JAVASCRIPT", "TAILWIND", "PYTHON", "THREE.JS", "ZUSTAND", "AI AGENTS"
+  "REACT", "JAVASCRIPT", "TAILWIND", "PYTHON", "ZUSTAND", "AI AGENTS", "VITE"
+];
+
+export const projectsData = [
+  {
+    id: 1,
+    title: "NaijaCounts",
+    tag: "AI WEB APP",
+    description:
+      "AI-powered calorie calculation web app built with React, Zustand, Tailwind CSS, Vite, and Google Gemini using the FAO West African Food Composition Table (WAFCT 2019).",
+    stack: ["React", "Zustand", "Tailwind", "Vite", "Gemini AI"],
+    link: "https://github.com/joshuaihesiulo",
+  },
+  {
+    id: 2,
+    title: "SavvyTrades",
+    tag: "FOREX JOURNAL",
+    description:
+      "Forex trade journaling app for logging, analyzing, and reviewing trades — helping traders track performance and sharpen their strategy.",
+    stack: ["React", "JavaScript", "Tailwind", "Vite"],
+    link: "https://github.com/joshuaihesiulo",
+  },
 ];

@@ -7,16 +7,16 @@ export default function Hero() {
       <div className="lg:col-span-7 space-y-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] uppercase">
           HI, I'M JOSHUA. <br />
-          A CREATIVE <RedStar className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-1 align-baseline" /> DEVELOPER <br />
+          A FRONTEND <RedStar className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-1 align-baseline" /> DEVELOPER <br />
           BASED IN AB<span className="line-through decoration-[#E53925] decoration-4">IA</span>
         </h1>
 
         <div className="flex items-center gap-2 text-xs md:text-sm font-bold tracking-widest uppercase">
+          <span>FRONTEND</span>
+          <RedStar className="w-3 h-3" />
+          <span>AI ENGINEER</span>
+          <RedStar className="w-3 h-3" />
           <span>REACT</span>
-          <RedStar className="w-3 h-3" />
-          <span>JAVASCRIPT</span>
-          <RedStar className="w-3 h-3" />
-          <span>TAILWIND</span>
         </div>
 
         <div className="pt-4 flex items-center gap-4">

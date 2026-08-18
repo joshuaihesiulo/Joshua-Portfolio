@@ -8,17 +8,17 @@ export default function Awards() {
       <div className="text-center space-y-2 mb-12">
         <RedStar className="w-6 h-6 mx-auto" />
         <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">Awards</h2>
-        <p className="text-[10px] font-bold tracking-widest text-gray-500 uppercase">REGONITIONS & ACCOIMPLISHMENTS</p>
+        <p className="text-[10px] font-bold tracking-widest text-gray-500 uppercase">RECOGNITIONS & ACCOMPLISHMENTS</p>
       </div>
 
       <div className="space-y-4 relative z-10">
         {awardsData.map((award) => (
           <div 
             key={award.id} 
-            className="border border-black bg-white p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all hover:translate-x-1"
+            className="border border-black bg-white p-4 sm:p-5 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all hover:translate-x-1"
           >
             <div className="flex items-center gap-4">
-              <div className="w-8 h-8 bg-[#E53925] text-white font-black text-xs flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 bg-[#E53925] text-white font-black text-xs flex items-center justify-center shrink-0 rounded">
                 {award.id}
               </div>
               <div>

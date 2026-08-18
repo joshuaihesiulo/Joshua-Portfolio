@@ -6,6 +6,7 @@ import About from './components/About';
 import StatsGrid from './components/StatsGrid';
 import Awards from './components/Awards';
 import Portfolio from './components/Portfolio';
+import ContactSidebar from './components/ContactSidebar';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <StatsGrid />
       <Awards />
       <Portfolio />
+      <ContactSidebar />
     </div>
   );
 }
