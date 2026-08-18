@@ -1,5 +1,6 @@
 import React from 'react';
 import RedStar from './RedStar';
+import portrait from '../assets/portrait.jpg';
 
 export default function Hero() {
   return (
@@ -38,7 +39,7 @@ export default function Hero() {
 
         <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl bg-gray-200">
           <img 
-            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" 
+            src={portrait} 
             alt="Joshua Ihesiulo" 
             className="w-full h-full object-cover grayscale contrast-125"
           />
