@@ -8,8 +8,7 @@ export default function Hero() {
       <div className="lg:col-span-7 space-y-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05] uppercase">
           HI, I'M JOSHUA. <br />
-          A FRONTEND <RedStar className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-1 align-baseline" /> DEVELOPER <br />
-          BASED IN AB<span className="line-through decoration-[#E53925] decoration-4">IA</span>
+          A FRONTEND <RedStar className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 mx-1 align-baseline" /> DEVELOPER
         </h1>
 
         <div className="flex items-center gap-2 text-xs md:text-sm font-bold tracking-widest uppercase">
@@ -21,10 +20,10 @@ export default function Hero() {
         </div>
 
         <div className="pt-4 flex items-center gap-4">
-          <button className="bg-black text-white border border-black px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-gray-800 transition">
+          <span className="text-xs font-bold uppercase tracking-wider text-gray-600">
             Got a project?
-          </button>
-          <button className="border border-black text-black px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-black hover:text-white transition">
+          </span>
+          <button className="bg-black text-white border border-black px-6 py-3 text-xs font-bold uppercase tracking-wider hover:bg-gray-800 transition">
             Let's talk
           </button>
         </div>
