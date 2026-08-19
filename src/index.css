@@ -16,3 +16,40 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+/* ---------- Scroll-reveal animation ----------
+   .reveal = hidden state (faded + shifted down 24px)
+   .reveal.is-visible = animated-in state, added by IntersectionObserver
+   in Reveal.jsx once the element is ~15% into the viewport.
+   transition-delay is set inline for staggered grids/lists. */
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Accessibility: reduced motion ----------
+   Users who prefer reduced motion get static content:
+   no reveal movement, no marquee scrolling, no parallax. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-marquee {
+    animation: none;
+  }
+
+  .parallax {
+    will-change: auto;
+  }
+}
