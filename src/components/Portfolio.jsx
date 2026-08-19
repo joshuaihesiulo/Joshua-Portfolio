@@ -45,7 +45,7 @@ export default function Portfolio() {
               </div>
 
               <div className="px-6 py-4 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider">
-                <span className="text-black">View on GitHub</span>
+                <span className="text-black">{project.cta}</span>
                 <span className="text-[#E53925] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                   ↗
                 </span>

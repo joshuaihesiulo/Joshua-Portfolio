@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import MarqueeBanner from './components/MarqueeBanner';
 import About from './components/About';
 import StatsGrid from './components/StatsGrid';
-import Awards from './components/Awards';
+import Certificates from './components/Certificates';
 import Portfolio from './components/Portfolio';
 import ContactSidebar from './components/ContactSidebar';
 
@@ -16,7 +16,7 @@ export default function App() {
       <MarqueeBanner />
       <About />
       <StatsGrid />
-      <Awards />
+      <Certificates />
       <Portfolio />
       <ContactSidebar />
     </div>

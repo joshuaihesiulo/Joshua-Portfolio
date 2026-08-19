@@ -51,7 +51,7 @@ export default function Hero() {
             <img 
               src={portrait} 
               alt="Joshua Ihesiulo" 
-              className="w-full h-full object-cover grayscale contrast-125"
+              className="w-full h-full object-cover"
             />
           </div>
         </Reveal>
