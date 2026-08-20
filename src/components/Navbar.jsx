@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="max-w-7xl mx-auto px-6 md:px-12 py-6 flex items-center justify-between">
       <div className="flex items-center gap-2 font-black text-xl tracking-tight">
         <RedStar className="w-5 h-5" />
-        <span>moxa.</span>
+        <span>Joshua.</span>
       </div>
 
       <nav className="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-gray-800">
