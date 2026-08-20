@@ -73,16 +73,6 @@ export const projectsData = [
     cta: "View live site",
   },
   {
-    id: 2,
-    title: "SavvyTrades",
-    tag: "FOREX JOURNAL",
-    description:
-      "Forex trade journaling app for logging, analyzing, and reviewing trades — helping traders track performance and sharpen their strategy.",
-    stack: ["React", "JavaScript", "Tailwind", "Vite"],
-    link: "https://frontend-lyart-six-36.vercel.app",
-    cta: "View live site",
-  },
-  {
     id: 3,
     title: "Todo App",
     tag: "WEB APP",
