@@ -79,8 +79,6 @@ export const projectsData = [
     description:
       "Forex trade journaling app for logging, analyzing, and reviewing trades — helping traders track performance and sharpen their strategy.",
     stack: ["React", "JavaScript", "Tailwind", "Vite"],
-    link: "https://frontend-lyart-six-36.vercel.app",
-    cta: "View live site",
   },
   {
     id: 3,

@@ -15,45 +15,61 @@ export default function Portfolio() {
       <div className="grid gap-8 md:grid-cols-2">
         {projectsData.map((project, i) => (
           <Reveal key={project.id} delay={i * 120} className="h-full">
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className="group border border-black bg-white overflow-hidden rounded-lg text-left shadow-lg transition-shadow hover:shadow-xl flex flex-col h-full"
-            >
-              <div className="bg-[#E53925] text-white text-[10px] font-bold px-3 py-1.5 inline-block uppercase tracking-wider self-start">
-                {project.tag}
+            {project.link ? (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="group border border-black bg-white overflow-hidden rounded-lg text-left shadow-lg transition-shadow hover:shadow-xl flex flex-col h-full"
+              >
+                <PortfolioCard project={project} />
+              </a>
+            ) : (
+              <div className="border border-black bg-white overflow-hidden rounded-lg text-left shadow-lg flex flex-col h-full">
+                <PortfolioCard project={project} />
               </div>
-
-              <div className="p-6 bg-gray-900 text-white flex-1 flex flex-col justify-between gap-5">
-                <div>
-                  <h3 className="text-xl font-bold">{project.title}</h3>
-                  <p className="text-xs text-gray-400 mt-2 leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {project.stack.map((tech) => (
-                    <span
-                      key={tech}
-                      className="text-[9px] font-bold tracking-widest text-gray-300 uppercase border border-gray-700 rounded-full px-2.5 py-1"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="px-6 py-4 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider">
-                <span className="text-black">{project.cta}</span>
-                <span className="text-[#E53925] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
-                  ↗
-                </span>
-              </div>
-            </a>
+            )}
           </Reveal>
         ))}
       </div>
     </section>
+  );
+}
+
+function PortfolioCard({ project }) {
+  return (
+    <>
+      <div className="bg-[#E53925] text-white text-[10px] font-bold px-3 py-1.5 inline-block uppercase tracking-wider self-start">
+        {project.tag}
+      </div>
+
+      <div className="p-6 bg-gray-900 text-white flex-1 flex flex-col justify-between gap-5">
+        <div>
+          <h3 className="text-xl font-bold">{project.title}</h3>
+          <p className="text-xs text-gray-400 mt-2 leading-relaxed">
+            {project.description}
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {project.stack.map((tech) => (
+            <span
+              key={tech}
+              className="text-[9px] font-bold tracking-widest text-gray-300 uppercase border border-gray-700 rounded-full px-2.5 py-1"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {project.cta && project.link && (
+        <div className="px-6 py-4 flex items-center justify-between text-[10px] font-bold uppercase tracking-wider">
+          <span className="text-black">{project.cta}</span>
+          <span className="text-[#E53925]">
+            ↗
+          </span>
+        </div>
+      )}
+    </>
   );
 }
