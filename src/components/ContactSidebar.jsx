@@ -37,6 +37,16 @@ const links = [
       </svg>
     ),
   },
+  {
+    label: "Resume",
+    href: "/joshua_ihesiulo_resume.pdf",
+    download: true,
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 4l5 5h-5V6zM9 12h6v2H9v-2zm0 4h6v2H9v-2z" />
+      </svg>
+    ),
+  },
 ];
 
 export default function ContactSidebar() {
@@ -47,6 +57,7 @@ export default function ContactSidebar() {
         <a
           key={link.label}
           href={link.href}
+          download={link.download || undefined}
           target={link.href.startsWith("http") ? "_blank" : undefined}
           rel="noreferrer"
           aria-label={link.label}
