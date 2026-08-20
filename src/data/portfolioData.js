@@ -82,6 +82,14 @@ export const projectsData = [
   },
   {
     id: 3,
+    title: "Solace",
+    tag: "HOTELS & HOUSING",
+    description:
+      "A Nigerian Airbnb-style platform for discovering hotels, apartments, and houses — browse verified listings, compare prices, and book comfortable stays anywhere in Nigeria.",
+    stack: ["React", "JavaScript", "Tailwind", "Vite"],
+  },
+  {
+    id: 4,
     title: "Todo App",
     tag: "WEB APP",
     description:
